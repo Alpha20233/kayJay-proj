@@ -161,9 +161,11 @@ function home() {
         box: {
             // gridColumn: 1,
             width: '100%',
-            // aspectRatio: '1/1',
             backgroundColor: 'white',
-            borderRadius: '0.5rem'
+            borderRadius: '0.5rem',
+            '@media (max-width: 425px)': {
+                aspectRatio: '1/1',
+            }
         },
 
         textCenter: {
@@ -201,7 +203,7 @@ function home() {
             marginTop: '0.5rem',
             '@media (max-width: 1280px)': {
                 fontSize: '14px',
-                textAlign:'center'
+                textAlign: 'center'
             },
         },
 
